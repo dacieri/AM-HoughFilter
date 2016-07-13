@@ -1,0 +1,1246 @@
+
+*** Running vivado
+    with args -log HoughFilter.vds -m64 -mode batch -messageDb vivado.pb -notrace -source HoughFilter.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source HoughFilter.tcl -notrace
+Command: synth_design -top HoughFilter -part xc7k480tffg901-2 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k480t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k480t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -195 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1113.902 ; gain = 176.953 ; free physical = 4082 ; free virtual = 26896
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HoughFilter' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: 3 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:42]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:48]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:51]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'HoughCell' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughCell.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'HoughCell' (1#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughCell.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn__parameterized0' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn__parameterized0' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn__parameterized1' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn__parameterized1' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn__parameterized2' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn__parameterized2' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn__parameterized3' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: -1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn__parameterized3' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn__parameterized4' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: -2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn__parameterized4' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn__parameterized5' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: -3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn__parameterized5' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'HoughColumn__parameterized6' [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+	Parameter mbin bound to: -4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HoughColumn__parameterized6' (2#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'HoughFilter' (3#1) [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter.vhd:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1167.293 ; gain = 230.344 ; free physical = 4027 ; free virtual = 26842
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1167.293 ; gain = 230.344 ; free physical = 4027 ; free virtual = 26842
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k480tffg901-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/constrs_1/new/HoughFilter_constr.xdc]
+Finished Parsing XDC File [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/constrs_1/new/HoughFilter_constr.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1607.785 ; gain = 2.000 ; free physical = 3746 ; free virtual = 26561
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4510 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3742 ; free virtual = 26557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k480tffg901-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3742 ; free virtual = 26557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3742 ; free virtual = 26557
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn__parameterized0'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn__parameterized1'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn__parameterized2'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn__parameterized3'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn__parameterized4'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn__parameterized5'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CellAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HoughColumn__parameterized6'
+WARNING: [Synth 8-3936] Found unconnected internal register 'tempOutputRegister_reg' and it is trimmed from '32' to '31' bits. [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter.vhd:96]
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oStub[valid]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ColumnAddr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rAddr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "address" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              processing |                              001 |                              001
+           waitfortracks |                              010 |                              011
+               checkbins |                              011 |                              010
+                 readout |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HoughColumn__parameterized6'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3732 ; free virtual = 26547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 64    
+	   7 Input     32 Bit       Adders := 64    
+	   2 Input     16 Bit       Adders := 8     
+	   2 Input     14 Bit       Adders := 16    
+	   2 Input      5 Bit       Adders := 145   
++---Registers : 
+	               32 Bit    Registers := 144   
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 8     
+	               25 Bit    Registers := 8     
+	               14 Bit    Registers := 24    
+	               13 Bit    Registers := 18    
+	               11 Bit    Registers := 6     
+	               10 Bit    Registers := 26    
+	                8 Bit    Registers := 81    
+	                5 Bit    Registers := 250   
+	                3 Bit    Registers := 99    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 388   
++---RAMs : 
+	              896 Bit         RAMs := 9     
+	              800 Bit         RAMs := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 192   
+	   4 Input     13 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 144   
+	   5 Input      8 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 65    
+	   5 Input      5 Bit        Muxes := 25    
+	   4 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 9     
+	   5 Input      3 Bit        Muxes := 16    
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   7 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 89    
+	   4 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HoughFilter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              896 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 57    
+	   4 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module HoughCell 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   7 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+Module HoughColumn 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module HoughColumn__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module HoughColumn__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module HoughColumn__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module HoughColumn__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module HoughColumn__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module HoughColumn__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+Module HoughColumn__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              896 Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:160)
+BRAMs: 1910 (col length: RAMB18 160 RAMB36 80)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3732 ; free virtual = 26547
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd:106]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3734 ; free virtual = 26549
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3734 ; free virtual = 26549
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+------------------------+-----------+----------------------+--------------+---------------------------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives   | Hierarchical Name               | 
++------------+------------------------+-----------+----------------------+--------------+---------------------------------+
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__17 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__18 | 
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__19 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__20 | 
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__21 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__22 | 
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__23 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__24 | 
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__25 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__26 | 
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__27 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__28 | 
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__29 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__30 | 
+|HoughFilter | StubBufferForCells_reg | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/HoughColumn/ram__31 | 
+|HoughFilter | StubBuffer_reg         | Implied   | 32 x 25              | RAM32M x 5   | HoughFilter/HoughColumn/ram__32 | 
+|HoughFilter | stubBuffer_reg         | Implied   | 32 x 28              | RAM32M x 5   | HoughFilter/ram__33             | 
++------------+------------------------+-----------+----------------------+--------------+---------------------------------+
+
+Note: The table above shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[7].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[7].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[7].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[7].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[7].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[7].Column /\A[10] )
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[0].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[0].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[0].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[0].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[0].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[0].Column /\A[10] )
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[4].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[4].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[4].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[4].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[4].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[6].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[6].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[6].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[6].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[6].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[6].Column /\A[10] )
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[5].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[5].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[5].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[5].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[5].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[2].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[2].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[2].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[2].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[2].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[2].Column /\A[10] )
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[1].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[1].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[1].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[1].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[1].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[1].Column /\A[10] )
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\readAddr_reg_rep[0] ' (FDE) to '\columns[3].Column /\readAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\readAddr_reg_rep[1] ' (FDE) to '\columns[3].Column /\readAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\readAddr_reg_rep[2] ' (FDE) to '\columns[3].Column /\readAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\readAddr_reg_rep[3] ' (FDE) to '\columns[3].Column /\readAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\readAddr_reg_rep[4] ' (FDE) to '\columns[3].Column /\readAddr_reg[4] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[3].Column /\A[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[7].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[0].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[7].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[0].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[4].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[6].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[5].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[2].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[1].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[3].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[4].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[6].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[5].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[2].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[1].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\dsp_cshift_reg[9] ' (FD) to '\columns[3].Column /\dsp_rhalf_reg[9] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[7].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[7].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[7].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[7].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[7].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[0].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[0].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[0].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[0].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[0].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[4].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[4].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[4].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[4].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[4].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[4].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[6].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[6].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[6].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[6].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[6].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[6].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[5].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[5].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[5].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[5].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[5].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[5].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[2].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[2].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[2].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[2].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[2].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[2].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[1].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[1].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[1].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[1].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[1].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[1].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\dspAddr_reg_rep[0] ' (FD) to '\columns[3].Column /\dspAddr_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\dspAddr_reg_rep[1] ' (FD) to '\columns[3].Column /\dspAddr_reg[1] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\dspAddr_reg_rep[2] ' (FD) to '\columns[3].Column /\dspAddr_reg[2] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\dspAddr_reg_rep[3] ' (FD) to '\columns[3].Column /\dspAddr_reg[3] '
+INFO: [Synth 8-3886] merging instance '\columns[3].Column /\dspAddr_reg_rep[4] ' (FD) to '\columns[3].Column /\dspAddr_reg[4] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\CellReader_reg[7] ' (FDE) to '\columns[7].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\CellReader_reg[6] ' (FDE) to '\columns[7].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\CellReader_reg[5] ' (FDE) to '\columns[7].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\CellReader_reg[4] ' (FDE) to '\columns[7].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\CellReader_reg[3] ' (FDE) to '\columns[7].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\CellReader_reg[2] ' (FDE) to '\columns[7].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[7].Column /\CellReader_reg[1] ' (FDE) to '\columns[7].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\CellReader_reg[7] ' (FDE) to '\columns[0].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\CellReader_reg[6] ' (FDE) to '\columns[0].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\CellReader_reg[5] ' (FDE) to '\columns[0].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\CellReader_reg[4] ' (FDE) to '\columns[0].Column /\CellReader_reg[0] '
+INFO: [Synth 8-3886] merging instance '\columns[0].Column /\CellReader_reg[3] ' (FDE) to '\columns[0].Column /\CellReader_reg[0] '
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[7].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[0].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[4].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[6].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[5].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[2].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[1].Column /\dsp_rhalf_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\columns[3].Column /\dsp_rhalf_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (\reg_reg[31] ) is unused and will be removed from module HoughCell.
+WARNING: [Synth 8-3332] Sequential element (\reg_reg[0] ) is unused and will be removed from module HoughCell.
+WARNING: [Synth 8-3332] Sequential element (\outputRegister_reg[31] ) is unused and will be removed from module HoughCell.
+WARNING: [Synth 8-3332] Sequential element (\outputRegister_reg[0] ) is unused and will be removed from module HoughCell.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[24] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[23] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[22] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[21] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[20] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[19] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[18] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[17] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[16] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[15] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[14] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[13] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[12] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[11] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[10] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[9] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[8] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[7] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[6] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[5] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[4] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[3] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[2] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[1] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[2] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[1] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (tempTrackCand_reg) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (trackCand_reg) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\tempOutputRegister_reg[31] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\tempOutputRegister_reg[0] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\outputRegister_reg[31] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\outputRegister_reg[0] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\tempCbin_reg[2] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\tempCbin_reg[1] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\tempCbin_reg[0] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\cbin_reg[2] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\cbin_reg[1] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\cbin_reg[0] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\A[10] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[7] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[6] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[5] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[4] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[3] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[2] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[1] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\dsp_rhalf_reg[9] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\dsp_cshift_reg[9] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\readAddr_reg_rep[0] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\readAddr_reg_rep[1] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\readAddr_reg_rep[2] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\readAddr_reg_rep[3] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\readAddr_reg_rep[4] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\dspAddr_reg_rep[0] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\dspAddr_reg_rep[1] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\dspAddr_reg_rep[2] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\dspAddr_reg_rep[3] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\dspAddr_reg_rep[4] ) is unused and will be removed from module HoughColumn.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[24] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[23] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[22] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[21] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[20] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[19] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[18] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[17] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[16] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[15] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[14] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[13] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[12] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[11] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[10] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[9] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[8] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[7] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[6] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[5] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[4] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[3] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[2] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[1] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[2] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\vec_reg[1] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\tempOutputRegister_reg[31] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\tempOutputRegister_reg[0] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\outputRegister_reg[31] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\outputRegister_reg[0] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\tempCbin_reg[2] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\tempCbin_reg[1] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\tempCbin_reg[0] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\cbin_reg[2] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\cbin_reg[1] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\cbin_reg[0] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\A[10] ) is unused and will be removed from module HoughColumn__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\CellReader_reg[7] ) is unused and will be removed from module HoughColumn__parameterized0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3714 ; free virtual = 26529
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3714 ; free virtual = 26529
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3671 ; free virtual = 26487
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3644 ; free virtual = 26459
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26444
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26444
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26444
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[EoF]  to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[r] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[7].Cell :\stub[phi] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[EoF]  to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[r] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[6].Cell :\stub[phi] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[EoF]  to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[r] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[5].Cell :\stub[phi] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[EoF]  to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[r] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[4].Cell :\stub[phi] [0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[3].Cell :\stub[EoF]  to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[3].Cell :\stub[r] [9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[3].Cell :\stub[r] [8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \rows[3].Cell :\stub[r] [7] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26444
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26444
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|HoughColumn | dspAddr_reg[0]    | 4      | 40    | NO           | NO                 | YES               | 40     | 0       | 
+|HoughColumn | dsp_cshift_reg[8] | 3      | 9     | NO           | NO                 | YES               | 9      | 0       | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   135|
+|3     |LUT1   |   275|
+|4     |LUT2   |   693|
+|5     |LUT3   |  1032|
+|6     |LUT4   |   718|
+|7     |LUT5   |  2232|
+|8     |LUT6   |  1466|
+|9     |MUXF7  |   315|
+|10    |RAM32M |    61|
+|11    |SRL16E |    49|
+|12    |FDRE   |  7772|
+|13    |IBUF   |    35|
+|14    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+----------------------------+------+
+|      |Instance              |Module                      |Cells |
++------+----------------------+----------------------------+------+
+|1     |top                   |                            | 14812|
+|2     |  \columns[7].Column  |HoughColumn                 |  1811|
+|3     |    \rows[7].Cell     |HoughCell__1                |   161|
+|4     |    \rows[6].Cell     |HoughCell__2                |   164|
+|5     |    \rows[5].Cell     |HoughCell__3                |   164|
+|6     |    \rows[4].Cell     |HoughCell__4                |   164|
+|7     |    \rows[3].Cell     |HoughCell__5                |   164|
+|8     |    \rows[2].Cell     |HoughCell__6                |   164|
+|9     |    \rows[1].Cell     |HoughCell__7                |   164|
+|10    |    \rows[0].Cell     |HoughCell__8                |   161|
+|11    |  \columns[6].Column  |HoughColumn__parameterized0 |  1796|
+|12    |    \rows[7].Cell     |HoughCell__9                |   161|
+|13    |    \rows[6].Cell     |HoughCell__10               |   164|
+|14    |    \rows[5].Cell     |HoughCell__11               |   164|
+|15    |    \rows[4].Cell     |HoughCell__12               |   164|
+|16    |    \rows[3].Cell     |HoughCell__13               |   164|
+|17    |    \rows[2].Cell     |HoughCell__14               |   164|
+|18    |    \rows[1].Cell     |HoughCell__15               |   164|
+|19    |    \rows[0].Cell     |HoughCell__16               |   161|
+|20    |  \columns[5].Column  |HoughColumn__parameterized1 |  1796|
+|21    |    \rows[7].Cell     |HoughCell__17               |   161|
+|22    |    \rows[6].Cell     |HoughCell__18               |   164|
+|23    |    \rows[5].Cell     |HoughCell__19               |   164|
+|24    |    \rows[4].Cell     |HoughCell__20               |   164|
+|25    |    \rows[3].Cell     |HoughCell__21               |   164|
+|26    |    \rows[2].Cell     |HoughCell__22               |   164|
+|27    |    \rows[1].Cell     |HoughCell__23               |   164|
+|28    |    \rows[0].Cell     |HoughCell__24               |   161|
+|29    |  \columns[4].Column  |HoughColumn__parameterized2 |  1786|
+|30    |    \rows[7].Cell     |HoughCell__25               |   161|
+|31    |    \rows[6].Cell     |HoughCell__26               |   164|
+|32    |    \rows[5].Cell     |HoughCell__27               |   164|
+|33    |    \rows[4].Cell     |HoughCell__28               |   164|
+|34    |    \rows[3].Cell     |HoughCell__29               |   164|
+|35    |    \rows[2].Cell     |HoughCell__30               |   164|
+|36    |    \rows[1].Cell     |HoughCell__31               |   164|
+|37    |    \rows[0].Cell     |HoughCell__32               |   161|
+|38    |  \columns[3].Column  |HoughColumn__parameterized3 |  1807|
+|39    |    \rows[7].Cell     |HoughCell__33               |   161|
+|40    |    \rows[6].Cell     |HoughCell__34               |   164|
+|41    |    \rows[5].Cell     |HoughCell__35               |   164|
+|42    |    \rows[4].Cell     |HoughCell__36               |   164|
+|43    |    \rows[3].Cell     |HoughCell__37               |   164|
+|44    |    \rows[2].Cell     |HoughCell__38               |   164|
+|45    |    \rows[1].Cell     |HoughCell__39               |   164|
+|46    |    \rows[0].Cell     |HoughCell__40               |   161|
+|47    |  \columns[2].Column  |HoughColumn__parameterized4 |  1807|
+|48    |    \rows[7].Cell     |HoughCell__41               |   161|
+|49    |    \rows[6].Cell     |HoughCell__42               |   164|
+|50    |    \rows[5].Cell     |HoughCell__43               |   164|
+|51    |    \rows[4].Cell     |HoughCell__44               |   164|
+|52    |    \rows[3].Cell     |HoughCell__45               |   164|
+|53    |    \rows[2].Cell     |HoughCell__46               |   164|
+|54    |    \rows[1].Cell     |HoughCell__47               |   164|
+|55    |    \rows[0].Cell     |HoughCell__48               |   161|
+|56    |  \columns[1].Column  |HoughColumn__parameterized5 |  1819|
+|57    |    \rows[7].Cell     |HoughCell__49               |   161|
+|58    |    \rows[6].Cell     |HoughCell__50               |   164|
+|59    |    \rows[5].Cell     |HoughCell__51               |   164|
+|60    |    \rows[4].Cell     |HoughCell__52               |   164|
+|61    |    \rows[3].Cell     |HoughCell__53               |   164|
+|62    |    \rows[2].Cell     |HoughCell__54               |   164|
+|63    |    \rows[1].Cell     |HoughCell__55               |   164|
+|64    |    \rows[0].Cell     |HoughCell__56               |   161|
+|65    |  \columns[0].Column  |HoughColumn__parameterized6 |  1805|
+|66    |    \rows[7].Cell     |HoughCell__57               |   161|
+|67    |    \rows[6].Cell     |HoughCell__58               |   164|
+|68    |    \rows[5].Cell     |HoughCell__59               |   164|
+|69    |    \rows[4].Cell     |HoughCell__60               |   164|
+|70    |    \rows[3].Cell     |HoughCell__61               |   164|
+|71    |    \rows[2].Cell     |HoughCell__62               |   164|
+|72    |    \rows[1].Cell     |HoughCell__63               |   164|
+|73    |    \rows[0].Cell     |HoughCell                   |   161|
++------+----------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2087 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1607.785 ; gain = 116.383 ; free physical = 3629 ; free virtual = 26445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1607.785 ; gain = 670.836 ; free physical = 3629 ; free virtual = 26445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 61 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 61 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+283 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1645.816 ; gain = 637.527 ; free physical = 3627 ; free virtual = 26442
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1685.832 ; gain = 0.000 ; free physical = 3623 ; free virtual = 26440
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 13 14:45:44 2016...

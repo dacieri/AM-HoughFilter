@@ -1,0 +1,13 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.sim/sim_1/synth/func/Filter_TB_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HoughCell
+INFO: [VRFC 10-307] analyzing entity \HoughCell__1\
+INFO: [VRFC 10-307] analyzing entity \HoughCell__2\
+INFO: [VRFC 10-307] analyzing entity \HoughCell__3\
+INFO: [VRFC 10-307] analyzing entity \HoughCell__4\
+INFO: [VRFC 10-307] analyzing entity \HoughCell__5\
+INFO: [VRFC 10-307] analyzing entity \HoughCell__6\
+INFO: [VRFC 10-307] analyzing entity \HoughCell__7\
+INFO: [VRFC 10-307] analyzing entity HoughColumn
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sim_1/new/HoughFilter_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Filter_TB

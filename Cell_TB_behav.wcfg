@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Cell_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Cell_TB" />
+            <top_module name="houghfilter_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="50412250fs"></ZoomEndTime>
+      <Cursor1Time time="56241000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="24" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/inputStub">
+      <obj_property name="ElementShortName">inputStub</obj_property>
+      <obj_property name="ObjectShortName">inputStub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/writeEn">
+      <obj_property name="ElementShortName">writeEn</obj_property>
+      <obj_property name="ObjectShortName">writeEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/readEn">
+      <obj_property name="ElementShortName">readEn</obj_property>
+      <obj_property name="ObjectShortName">readEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/trackCand">
+      <obj_property name="ElementShortName">trackCand</obj_property>
+      <obj_property name="ObjectShortName">trackCand</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/stubCounter">
+      <obj_property name="ElementShortName">stubCounter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">stubCounter[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/outputRegister">
+      <obj_property name="ElementShortName">outputRegister[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputRegister[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/uut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/stub">
+      <obj_property name="ElementShortName">stub</obj_property>
+      <obj_property name="ObjectShortName">stub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/uut/writeEn">
+      <obj_property name="ElementShortName">writeEn</obj_property>
+      <obj_property name="ObjectShortName">writeEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/uut/readEn">
+      <obj_property name="ElementShortName">readEn</obj_property>
+      <obj_property name="ObjectShortName">readEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/uut/trackCand">
+      <obj_property name="ElementShortName">trackCand</obj_property>
+      <obj_property name="ObjectShortName">trackCand</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/stubCounter">
+      <obj_property name="ElementShortName">stubCounter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">stubCounter[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/outputRegister">
+      <obj_property name="ElementShortName">outputRegister[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputRegister[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/inputStub.layerId">
+      <obj_property name="ElementShortName">.layerId[2:0]</obj_property>
+      <obj_property name="ObjectShortName">inputStub.layerId[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/inputStub">
+      <obj_property name="ElementShortName">inputStub</obj_property>
+      <obj_property name="ObjectShortName">inputStub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/hStub">
+      <obj_property name="ElementShortName">hStub</obj_property>
+      <obj_property name="ObjectShortName">hStub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/stubBuffer">
+      <obj_property name="ElementShortName">stubBuffer[31:0][28:0]</obj_property>
+      <obj_property name="ObjectShortName">stubBuffer[31:0][28:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/writeAddr">
+      <obj_property name="ElementShortName">writeAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">writeAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/uut/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Cell_TB/uut/eot">
+      <obj_property name="ElementShortName">eot</obj_property>
+      <obj_property name="ObjectShortName">eot</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/counter">
+      <obj_property name="ElementShortName">counter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/reg">
+      <obj_property name="ElementShortName">reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Cell_TB/uut/layerReg">
+      <obj_property name="ElementShortName">layerReg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">layerReg[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

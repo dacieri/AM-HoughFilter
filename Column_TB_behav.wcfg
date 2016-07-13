@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Column_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Column_TB" />
+            <top_module name="houghfilter_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="55903000fs"></ZoomStartTime>
+      <ZoomEndTime time="93703001fs"></ZoomEndTime>
+      <Cursor1Time time="85403000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="53" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/inputStub">
+      <obj_property name="ElementShortName">inputStub</obj_property>
+      <obj_property name="ObjectShortName">inputStub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/writeEn">
+      <obj_property name="ElementShortName">writeEn</obj_property>
+      <obj_property name="ObjectShortName">writeEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/ready">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/trackCand">
+      <obj_property name="ElementShortName">trackCand</obj_property>
+      <obj_property name="ObjectShortName">trackCand</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/stubCounter">
+      <obj_property name="ElementShortName">stubCounter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">stubCounter[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/outputRegister">
+      <obj_property name="ElementShortName">outputRegister[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputRegister[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/cbin">
+      <obj_property name="ElementShortName">cbin[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cbin[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/mMin">
+      <obj_property name="ElementShortName">mMin[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mMin[2:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/mMax">
+      <obj_property name="ElementShortName">mMax[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mMax[2:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/HTstub">
+      <obj_property name="ElementShortName">HTstub</obj_property>
+      <obj_property name="ObjectShortName">HTstub</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/HTstub.valid">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">HTstub.valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/HTstub.EoF">
+         <obj_property name="ElementShortName">.EoF</obj_property>
+         <obj_property name="ObjectShortName">HTstub.EoF</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/HTstub.r">
+         <obj_property name="ElementShortName">.r[9:0]</obj_property>
+         <obj_property name="ObjectShortName">HTstub.r[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/HTstub.phi">
+         <obj_property name="ElementShortName">.phi[12:0]</obj_property>
+         <obj_property name="ObjectShortName">HTstub.phi[12:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/HTstub.layerId">
+         <obj_property name="ElementShortName">.layerId[2:0]</obj_property>
+         <obj_property name="ObjectShortName">HTstub.layerId[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/stub">
+      <obj_property name="ElementShortName">stub</obj_property>
+      <obj_property name="ObjectShortName">stub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/writeAddr">
+      <obj_property name="ElementShortName">writeAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">writeAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/readAddr">
+      <obj_property name="ElementShortName">readAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">readAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dsp_phi">
+      <obj_property name="ElementShortName">dsp_phi[12:0]</obj_property>
+      <obj_property name="ObjectShortName">dsp_phi[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dsp_phirm">
+      <obj_property name="ElementShortName">dsp_phirm[13:0]</obj_property>
+      <obj_property name="ObjectShortName">dsp_phirm[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dsp_rm">
+      <obj_property name="ElementShortName">dsp_rm[13:0]</obj_property>
+      <obj_property name="ObjectShortName">dsp_rm[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dsp_rhalf">
+      <obj_property name="ElementShortName">dsp_rhalf[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dsp_rhalf[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dsp_cshift">
+      <obj_property name="ElementShortName">dsp_cshift[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dsp_cshift[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dsp_cbin">
+      <obj_property name="ElementShortName">dsp_cbin[13:0]</obj_property>
+      <obj_property name="ObjectShortName">dsp_cbin[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/stubAddr">
+      <obj_property name="ElementShortName">stubAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">stubAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/CellEnabler">
+      <obj_property name="ElementShortName">CellEnabler[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CellEnabler[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/dspValid">
+      <obj_property name="ElementShortName">dspValid</obj_property>
+      <obj_property name="ObjectShortName">dspValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dspAddr">
+      <obj_property name="ElementShortName">dspAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dspAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/dspAddr0">
+      <obj_property name="ElementShortName">dspAddr0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dspAddr0[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="vbus" fp_name="vbus91">
+      <obj_property name="label">New Virtual Bus 11</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/dsp_cbin[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">dsp_cbin[2]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/dsp_cbin[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">dsp_cbin[1]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/dsp_cbin[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">dsp_cbin[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/CellStub">
+      <obj_property name="ElementShortName">CellStub</obj_property>
+      <obj_property name="ObjectShortName">CellStub</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider820" type="divider">
+      <obj_property name="label">Cell [3]</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/\rows(3)\/Cell/writeEn">
+      <obj_property name="ElementShortName">writeEn</obj_property>
+      <obj_property name="ObjectShortName">writeEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/writeAddr">
+      <obj_property name="ElementShortName">writeAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">writeAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/\rows(3)\/Cell/trackCand">
+      <obj_property name="ElementShortName">trackCand</obj_property>
+      <obj_property name="ObjectShortName">trackCand</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/stubCounter">
+      <obj_property name="ElementShortName">stubCounter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">stubCounter[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/stub">
+      <obj_property name="ElementShortName">stub</obj_property>
+      <obj_property name="ObjectShortName">stub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/\rows(3)\/Cell/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/reg">
+      <obj_property name="ElementShortName">reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/\rows(3)\/Cell/readEn">
+      <obj_property name="ElementShortName">readEn</obj_property>
+      <obj_property name="ObjectShortName">readEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/outputRegister">
+      <obj_property name="ElementShortName">outputRegister[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputRegister[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/layerReg">
+      <obj_property name="ElementShortName">layerReg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">layerReg[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/inputStub">
+      <obj_property name="ElementShortName">inputStub</obj_property>
+      <obj_property name="ObjectShortName">inputStub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/hStub">
+      <obj_property name="ElementShortName">hStub</obj_property>
+      <obj_property name="ObjectShortName">hStub</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/\rows(3)\/Cell/eot">
+      <obj_property name="ElementShortName">eot</obj_property>
+      <obj_property name="ObjectShortName">eot</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/\rows(3)\/Cell/counter">
+      <obj_property name="ElementShortName">counter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/\rows(3)\/Cell/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider900" type="divider">
+      <obj_property name="label">ReadOut state</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FF0000</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="other" fp_name="/Column_TB/uut/state">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/CellAddr">
+      <obj_property name="ElementShortName">CellAddr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">CellAddr[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/CellTrackCand">
+      <obj_property name="ElementShortName">CellTrackCand[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CellTrackCand[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/tempCbin">
+      <obj_property name="ElementShortName">tempCbin[2:0]</obj_property>
+      <obj_property name="ObjectShortName">tempCbin[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/tempOutputRegister">
+      <obj_property name="ElementShortName">tempOutputRegister[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tempOutputRegister[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/tempStubCounter">
+      <obj_property name="ElementShortName">tempStubCounter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tempStubCounter[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/Column_TB/uut/tempTrackCand">
+      <obj_property name="ElementShortName">tempTrackCand</obj_property>
+      <obj_property name="ObjectShortName">tempTrackCand</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/Column_TB/uut/CellReady">
+      <obj_property name="ElementShortName">CellReady[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CellReady[7:0]</obj_property>
+   </wvobject>
+</wave_config>

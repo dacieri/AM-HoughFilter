@@ -1,0 +1,17 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /data/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 44d57e804d9047749d53460dcdd5e5c1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Filter_TB_func_synth xil_defaultlib.Filter_TB -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] houghfilter remains a black-box since it has no binding entity [/net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.srcs/sim_1/new/HoughFilter_tb.vhd:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.houghfilter_pkg
+Compiling architecture behaviour of entity xil_defaultlib.filter_tb
+Built simulation snapshot Filter_TB_func_synth

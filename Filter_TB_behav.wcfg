@@ -11,11 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="92320000fs"></ZoomStartTime>
-      <ZoomEndTime time="149020001fs"></ZoomEndTime>
-      <Cursor1Time time="157500000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="329994006fs"></ZoomEndTime>
+      <Cursor1Time time="122897000fs"></Cursor1Time>
    </zoom_setting>
    <WVObjectSize size="25" />
+   <wave_markers>
+      <marker label="" time="20835000" />
+      <marker label="" time="122897000" />
+   </wave_markers>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/ColumnAddr">
       <obj_property name="ElementShortName">ColumnAddr[2:0]</obj_property>
       <obj_property name="ObjectShortName">ColumnAddr[2:0]</obj_property>

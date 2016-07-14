@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Wed Jul 13 14:46:26 2016
+| Date         : Thu Jul 14 09:38:56 2016
 | Host         : heplnw236.pp.rl.ac.uk running 64-bit Scientific Linux release 6.7 (Carbon)
 | Command      : report_control_sets -verbose -file HoughFilter_control_sets_placed.rpt
 | Design       : HoughFilter
@@ -23,7 +23,7 @@ Table of Contents
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
 | Number of unique control sets                                     |   253 |
-| Minimum Number of register sites lost to control set restrictions |   900 |
+| Minimum Number of register sites lost to control set restrictions |   906 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |            4103 |         1225 |
+| No           | No                    | No                     |            3921 |         1143 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             606 |          264 |
+| Yes          | No                    | No                     |             606 |          253 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            3063 |          652 |
+| Yes          | Yes                   | No                     |            3063 |          644 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,259 +48,259 @@ Table of Contents
 +----------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
 |  Clock Signal  |                       Enable Signal                      |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
 +----------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG | columns[1].Column/CellEnabler                            | columns[1].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[2].Column/CellEnabler                            | columns[2].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[2].Column/CellEnabler                            | columns[2].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[3].Column/CellEnabler                            | columns[3].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[3].Column/CellEnabler                            | columns[3].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[5].Column/CellEnabler                            | columns[5].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[5].Column/CellEnabler                            | columns[5].Column/CellEnabler[5]_i_1_n_0              |                2 |              4 |
 |  clk_IBUF_BUFG | columns[7].Column/CellEnabler                            | columns[7].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[4].Column/CellEnabler                            | columns[4].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[4].Column/CellEnabler                            | columns[4].Column/CellEnabler[5]_i_1_n_0              |                2 |              4 |
+|  clk_IBUF_BUFG | columns[3].Column/CellEnabler                            | columns[3].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[3].Column/CellEnabler                            | columns[3].Column/CellEnabler[5]_i_1_n_0              |                2 |              4 |
+|  clk_IBUF_BUFG | columns[6].Column/CellEnabler                            | columns[6].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[6].Column/CellEnabler                            | columns[6].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
 |  clk_IBUF_BUFG | columns[7].Column/CellEnabler                            | columns[7].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
 |  clk_IBUF_BUFG | columns[1].Column/CellEnabler                            | columns[1].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[4].Column/CellEnabler                            | columns[4].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[0].Column/CellEnabler                            | columns[0].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[1].Column/CellEnabler                            | columns[1].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[2].Column/CellEnabler                            | columns[2].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[2].Column/CellEnabler                            | columns[2].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
 |  clk_IBUF_BUFG | columns[0].Column/CellEnabler                            | columns[0].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[4].Column/CellEnabler                            | columns[4].Column/CellEnabler[7]_i_1_n_0              |                2 |              4 |
-|  clk_IBUF_BUFG | columns[6].Column/CellEnabler                            | columns[6].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[6].Column/CellEnabler                            | columns[6].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[1].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[1].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[2].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[2].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[3].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/CellEnabler                            | columns[5].Column/CellEnabler[5]_i_1_n_0              |                1 |              4 |
+|  clk_IBUF_BUFG | columns[5].Column/CellEnabler                            | columns[5].Column/CellEnabler[7]_i_1_n_0              |                2 |              4 |
+|  clk_IBUF_BUFG | columns[0].Column/CellEnabler                            | columns[0].Column/CellEnabler[7]_i_1_n_0              |                1 |              4 |
 |  clk_IBUF_BUFG | columns[3].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[7].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[0].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[0].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/readAddr[0]_i_2_n_0                    | columns[3].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[7].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[7].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[6].Cell/writeAddr              |                3 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[6].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[5].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[4].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[1].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[6].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[6].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[5].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[4].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[3].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[2].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[2].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[1].Cell/writeAddr              |                3 |              5 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[4].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[4].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[0].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[4].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[0].Cell/writeAddr              |                3 |              5 |
 |  clk_IBUF_BUFG | columns[4].Column/readAddr[0]_i_2_n_0                    | columns[4].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/writeAddr[4]_i_1_n_0                   |                                                       |                3 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
 |  clk_IBUF_BUFG | columns[3].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[7].Cell/writeAddr              |                3 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[3].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[1].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[3].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[6].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[3].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[1].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[3].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[5].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[3].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[4].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[1].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[1].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[0].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[0].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[0].Cell/writeAddr              |                3 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[0].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[7].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[5].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/readAddr[0]_i_2_n_0                    | columns[1].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/readAddr[0]_i_2_n_0                    | columns[5].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[7].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[7].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[0].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[7].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[6].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[6].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[5].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[2].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[2].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[2].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[1].Cell/writeAddr              |                3 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[1].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/readAddr[0]_i_2_n_0                    | columns[0].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
-|  clk_IBUF_BUFG | columns[0].Column/tempStubCounter                        | columns[0].Column/tempStubCounter[4]_i_1_n_0          |                2 |              5 |
-|  clk_IBUF_BUFG | rAddr[0]_i_1_n_0                                         |                                                       |                4 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/readAddr[0]_i_2_n_0                    | columns[2].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[6].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[7].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[5].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[1].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[4].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[4].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[3].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[0].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[2].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[2].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[5].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[5].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[4].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | wAddr[4]_i_2_n_0                                         | wAddr[4]_i_1_n_0                                      |                1 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[3].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[2].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[5].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[5].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[2].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[2].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[4].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[1].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[1].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[0].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/readAddr[0]_i_2_n_0                    | columns[2].Column/readAddr[0]_i_1_n_0                 |                3 |              5 |
 |  clk_IBUF_BUFG | columns[2].Column/writeAddr[4]_i_1_n_0                   |                                                       |                3 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[7].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[1].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[7].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[6].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[6].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[4].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[3].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[7].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[3].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[4].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[2].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[3].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[2].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[2].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[2].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[1].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[1].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[1].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[1].Column/rows[2].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[3].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[6].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[7].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[7].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[6].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[6].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[4].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/readAddr[0]_i_2_n_0                    | columns[6].Column/readAddr[0]_i_1_n_0                 |                3 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[5].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[3].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[4].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[3].Column/rows[0].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[3].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/readAddr[0]_i_2_n_0                    | columns[3].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[3].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[1].Column/rows[4].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[7].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[7].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[2].Column/rows[6].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[2].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[2].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[3].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/readAddr[0]_i_2_n_0                    | columns[7].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[3].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[4].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[4].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[2].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[5].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[5].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/tempStubCounter                        | columns[7].Column/tempStubCounter[4]_i_1_n_0          |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/readAddr[0]_i_2_n_0                    | columns[0].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[2].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[6].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[6].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[6].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[7].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[7].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[4].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[7].Cell/writeAddr              |                3 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[7].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[5].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[4].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[6].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[1].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/readAddr[0]_i_2_n_0                    | columns[1].Column/readAddr[0]_i_1_n_0                 |                3 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/readAddr[0]_i_2_n_0                    | columns[5].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[1].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[0].Cell/writeAddr              |                4 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[1].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[1].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[1].Column/writeAddr[4]_i_1_n_0                   |                                                       |                3 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[0].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[0].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[4].Column/rows[7].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[1].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[2].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[2].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[7].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[7].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/readAddr[0]_i_2_n_0                    | columns[6].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/writeAddr[4]_i_1_n_0                   |                                                       |                3 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[0].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[2].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[0].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[2].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[6].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[5].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/readAddr[0]_i_2_n_0                    | columns[7].Column/readAddr[0]_i_1_n_0                 |                2 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[5].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[4].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/tempStubCounter                        | columns[7].Column/tempStubCounter[4]_i_1_n_0          |                2 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[4].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[3].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[1].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[7].Column/rows[1].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[1].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[1].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[7].Column/rows[2].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[1].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[4].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[5].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[3].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[3].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[3].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[5].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[2].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[2].Cell/writeAddr              |                1 |              5 |
 |  clk_IBUF_BUFG | columns[5].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[1].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[2].Cell/writeAddr              |                2 |              5 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[4].Column/rows[7].Cell/writeAddr              |                1 |              5 |
-|  clk_IBUF_BUFG | columns[2].Column/tempTrackCand                          | columns[2].Column/tempStubCounter[4]_i_1_n_0          |                2 |              6 |
-|  clk_IBUF_BUFG | columns[3].Column/tempTrackCand                          | columns[3].Column/tempStubCounter[4]_i_1_n_0          |                1 |              6 |
-|  clk_IBUF_BUFG | columns[5].Column/tempTrackCand                          | columns[5].Column/tempStubCounter[4]_i_1_n_0          |                1 |              6 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[2].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[2].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | wAddr[4]_i_2_n_0                                         | wAddr[4]_i_1_n_0                                      |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[0].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[0].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[0].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[1].Column/writeAddr[4]_i_1_n_0                   |                                                       |                2 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[0].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[0].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[0].Column/rows[6].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[4].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[4].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[4].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[5].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[5].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[5].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[5].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[4].Cell/counter[4]_i_1_n_0        | columns[0].Column/rows[4].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[6].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[6].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[6].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[6].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | rAddr[0]_i_1_n_0                                         |                                                       |                4 |              5 |
+|  clk_IBUF_BUFG | columns[0].Column/tempStubCounter                        | columns[0].Column/tempStubCounter[4]_i_1_n_0          |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[2].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[2].Cell/writeAddr              |                2 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[7].Cell/counter[4]_i_1_n_0        | columns[5].Column/rows[7].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[7].Cell/inputStub_reg[valid_n_0_] | columns[5].Column/rows[7].Cell/writeAddr              |                3 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[1].Cell/counter[4]_i_1_n_0        | columns[6].Column/rows[1].Cell/writeAddr              |                1 |              5 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[1].Cell/inputStub_reg[valid_n_0_] | columns[6].Column/rows[1].Cell/writeAddr              |                2 |              5 |
 |  clk_IBUF_BUFG | columns[6].Column/tempTrackCand                          | columns[6].Column/tempStubCounter[4]_i_1_n_0          |                2 |              6 |
 |  clk_IBUF_BUFG | columns[1].Column/tempTrackCand                          | columns[1].Column/tempStubCounter[4]_i_1_n_0          |                1 |              6 |
-|  clk_IBUF_BUFG | columns[4].Column/tempTrackCand                          | columns[4].Column/tempStubCounter[4]_i_1_n_0          |                2 |              6 |
+|  clk_IBUF_BUFG | columns[4].Column/tempTrackCand                          | columns[4].Column/tempStubCounter[4]_i_1_n_0          |                1 |              6 |
+|  clk_IBUF_BUFG | columns[2].Column/tempTrackCand                          | columns[2].Column/tempStubCounter[4]_i_1_n_0          |                1 |              6 |
+|  clk_IBUF_BUFG | columns[5].Column/tempTrackCand                          | columns[5].Column/tempStubCounter[4]_i_1_n_0          |                2 |              6 |
+|  clk_IBUF_BUFG | columns[3].Column/tempTrackCand                          | columns[3].Column/tempStubCounter[4]_i_1_n_0          |                1 |              6 |
 |  clk_IBUF_BUFG | oStub[valid]_i_2_n_0                                     | oStub[valid]_i_1_n_0                                  |                5 |             28 |
-|  clk_IBUF_BUFG | columns[5].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               17 |             30 |
 |  clk_IBUF_BUFG | columns[1].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               16 |             30 |
-|  clk_IBUF_BUFG | columns[6].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               15 |             30 |
-|  clk_IBUF_BUFG | columns[7].Column/tempOutputRegister                     |                                                       |               16 |             30 |
-|  clk_IBUF_BUFG | columns[0].Column/tempOutputRegister                     |                                                       |               17 |             30 |
-|  clk_IBUF_BUFG | columns[3].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               15 |             30 |
 |  clk_IBUF_BUFG | columns[2].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               17 |             30 |
-|  clk_IBUF_BUFG | columns[4].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               16 |             30 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[3].Cell/writeAddr                 | columns[1].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[2].Cell/writeAddr                 | columns[1].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[2].Cell/writeAddr                 | columns[7].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[1].Cell/writeAddr                 | columns[1].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[0].Cell/writeAddr                 | columns[7].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               16 |             30 |
+|  clk_IBUF_BUFG | columns[0].Column/tempOutputRegister                     |                                                       |               15 |             30 |
+|  clk_IBUF_BUFG | columns[7].Column/tempOutputRegister                     |                                                       |               15 |             30 |
+|  clk_IBUF_BUFG | columns[3].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               15 |             30 |
+|  clk_IBUF_BUFG | columns[6].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               15 |             30 |
+|  clk_IBUF_BUFG | columns[4].Column/tempOutputRegister[30]_i_1_n_0         |                                                       |               17 |             30 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[0].Cell/writeAddr                 | columns[1].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | tempOutputRegister                                       |                                                       |               24 |             35 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[6].Cell/writeAddr                 | columns[0].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[6].Cell/writeAddr                 | columns[1].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[7].Cell/writeAddr                 | columns[0].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
 |  clk_IBUF_BUFG | columns[0].Column/rows[5].Cell/writeAddr                 | columns[0].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[1].Cell/writeAddr                 | columns[7].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[3].Cell/writeAddr                 | columns[0].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | tempOutputRegister                                       |                                                       |               21 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[2].Cell/writeAddr                 | columns[6].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[0].Cell/writeAddr                 | columns[6].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[0].Column/stubCounter[4]_i_1_n_0                 |                                                       |                8 |             35 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[1].Cell/writeAddr                 | columns[0].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[4].Cell/writeAddr                 | columns[6].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[3].Cell/writeAddr                 | columns[6].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[2].Cell/writeAddr                 | columns[0].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[0].Cell/writeAddr                 | columns[1].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[5].Cell/writeAddr                 | columns[6].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[4].Cell/writeAddr                 | columns[0].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[6].Cell/writeAddr                 | columns[4].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |               10 |             35 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[6].Cell/writeAddr                 | columns[0].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[0].Column/rows[7].Cell/writeAddr                 | columns[0].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                9 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[6].Cell/writeAddr                 | columns[6].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
 |  clk_IBUF_BUFG | columns[0].Column/rows[0].Cell/writeAddr                 | columns[0].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/stubCounter[4]_i_1_n_0                 |                                                       |               11 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[2].Cell/writeAddr                 | columns[5].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                9 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[6].Cell/writeAddr                 | columns[5].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[0].Cell/writeAddr                 | columns[3].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[5].Cell/writeAddr                 | columns[5].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[1].Cell/writeAddr                 | columns[3].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[2].Cell/writeAddr                 | columns[3].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[4].Cell/writeAddr                 | columns[5].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[3].Cell/writeAddr                 | columns[3].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                9 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[4].Cell/writeAddr                 | columns[3].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[3].Cell/writeAddr                 | columns[5].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[5].Cell/writeAddr                 | columns[3].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[6].Cell/writeAddr                 | columns[3].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[4].Cell/writeAddr                 | columns[1].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[1].Cell/writeAddr                 | columns[5].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
-|  clk_IBUF_BUFG | columns[3].Column/rows[7].Cell/writeAddr                 | columns[3].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[0].Cell/writeAddr                 | columns[5].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[0].Cell/writeAddr                 | columns[4].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[1].Cell/writeAddr                 | columns[4].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[2].Cell/writeAddr                 | columns[4].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[3].Cell/writeAddr                 | columns[4].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[4].Cell/writeAddr                 | columns[4].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[5].Cell/writeAddr                 | columns[4].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/rows[7].Cell/writeAddr                 | columns[4].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[5].Column/rows[7].Cell/writeAddr                 | columns[5].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[4].Cell/writeAddr                 | columns[0].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[3].Cell/writeAddr                 | columns[0].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
 |  clk_IBUF_BUFG | columns[1].Column/rows[5].Cell/writeAddr                 | columns[1].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[3].Cell/writeAddr                 | columns[7].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[1].Cell/writeAddr                 | columns[1].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[2].Cell/writeAddr                 | columns[1].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[2].Cell/writeAddr                 | columns[0].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[0].Column/rows[1].Cell/writeAddr                 | columns[0].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[3].Cell/writeAddr                 | columns[1].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[0].Column/stubCounter[4]_i_1_n_0                 |                                                       |               11 |             35 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[4].Cell/writeAddr                 | columns[1].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[4].Cell/writeAddr                 | columns[6].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[6].Cell/writeAddr                 | columns[4].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[7].Cell/writeAddr                 | columns[4].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[1].Column/rows[7].Cell/writeAddr                 | columns[1].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[3].Cell/writeAddr                 | columns[6].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[0].Cell/writeAddr                 | columns[5].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[1].Cell/writeAddr                 | columns[5].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[2].Cell/writeAddr                 | columns[5].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[3].Cell/writeAddr                 | columns[5].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[4].Cell/writeAddr                 | columns[5].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[5].Cell/writeAddr                 | columns[5].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[6].Cell/writeAddr                 | columns[5].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/rows[7].Cell/writeAddr                 | columns[5].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[5].Cell/writeAddr                 | columns[4].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[7].Cell/writeAddr                 | columns[6].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[7].Cell/writeAddr                 | columns[7].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[6].Cell/writeAddr                 | columns[7].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[5].Cell/writeAddr                 | columns[7].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
 |  clk_IBUF_BUFG | columns[7].Column/rows[4].Cell/writeAddr                 | columns[7].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[6].Cell/writeAddr                 | columns[1].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[5].Cell/writeAddr                 | columns[7].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[1].Column/rows[7].Cell/writeAddr                 | columns[1].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[6].Cell/writeAddr                 | columns[7].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[3].Cell/writeAddr                 | columns[7].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[2].Cell/writeAddr                 | columns[7].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[1].Cell/writeAddr                 | columns[7].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/rows[0].Cell/writeAddr                 | columns[7].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[7].Column/stubCounter[4]_i_1_n_0                 |                                                       |               11 |             35 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[6].Cell/writeAddr                 | columns[6].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[5].Cell/writeAddr                 | columns[6].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[2].Cell/writeAddr                 | columns[3].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[0].Cell/writeAddr                 | columns[6].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[0].Cell/writeAddr                 | columns[2].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[1].Cell/writeAddr                 | columns[2].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[7].Column/rows[7].Cell/writeAddr                 | columns[7].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[1].Cell/writeAddr                 | columns[2].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[2].Cell/writeAddr                 | columns[2].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[1].Cell/writeAddr                 | columns[6].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[3].Cell/writeAddr                 | columns[2].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |               11 |             35 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[3].Cell/writeAddr                 | columns[2].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[4].Cell/writeAddr                 | columns[2].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
-|  clk_IBUF_BUFG | columns[6].Column/rows[7].Cell/writeAddr                 | columns[6].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
-|  clk_IBUF_BUFG | columns[2].Column/rows[5].Cell/writeAddr                 | columns[2].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[2].Column/rows[5].Cell/writeAddr                 | columns[2].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[6].Cell/writeAddr                 | columns[2].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
 |  clk_IBUF_BUFG | columns[2].Column/rows[7].Cell/writeAddr                 | columns[2].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
-|  clk_IBUF_BUFG | columns[4].Column/trackCand_i_1_n_0                      |                                                       |               10 |             36 |
-|  clk_IBUF_BUFG | columns[1].Column/trackCand_i_1_n_0                      |                                                       |               13 |             36 |
-|  clk_IBUF_BUFG | columns[2].Column/trackCand_i_1_n_0                      |                                                       |               14 |             36 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[2].Cell/writeAddr                 | columns[6].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[0].Cell/writeAddr                 | columns[3].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[1].Cell/writeAddr                 | columns[3].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[3].Cell/writeAddr                 | columns[3].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[4].Cell/writeAddr                 | columns[3].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[5].Cell/writeAddr                 | columns[3].Column/rows[5].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[6].Cell/writeAddr                 | columns[3].Column/rows[6].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[3].Column/rows[7].Cell/writeAddr                 | columns[3].Column/rows[7].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[6].Column/rows[1].Cell/writeAddr                 | columns[6].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                5 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[0].Cell/writeAddr                 | columns[4].Column/rows[0].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[1].Cell/writeAddr                 | columns[4].Column/rows[1].Cell/stubCounter[4]_i_1_n_0 |                7 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[2].Cell/writeAddr                 | columns[4].Column/rows[2].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[3].Cell/writeAddr                 | columns[4].Column/rows[3].Cell/stubCounter[4]_i_1_n_0 |                6 |             35 |
+|  clk_IBUF_BUFG | columns[4].Column/rows[4].Cell/writeAddr                 | columns[4].Column/rows[4].Cell/stubCounter[4]_i_1_n_0 |                8 |             35 |
+|  clk_IBUF_BUFG | columns[5].Column/trackCand_i_1_n_0                      |                                                       |               10 |             36 |
 |  clk_IBUF_BUFG | columns[6].Column/trackCand_i_1_n_0                      |                                                       |               10 |             36 |
-|  clk_IBUF_BUFG | columns[5].Column/trackCand_i_1_n_0                      |                                                       |               14 |             36 |
-|  clk_IBUF_BUFG | columns[3].Column/trackCand_i_1_n_0                      |                                                       |               11 |             36 |
-|  clk_IBUF_BUFG |                                                          |                                                       |             1296 |           4640 |
+|  clk_IBUF_BUFG | columns[1].Column/trackCand_i_1_n_0                      |                                                       |               12 |             36 |
+|  clk_IBUF_BUFG | columns[4].Column/trackCand_i_1_n_0                      |                                                       |                9 |             36 |
+|  clk_IBUF_BUFG | columns[3].Column/trackCand_i_1_n_0                      |                                                       |                7 |             36 |
+|  clk_IBUF_BUFG | columns[2].Column/trackCand_i_1_n_0                      |                                                       |               11 |             36 |
+|  clk_IBUF_BUFG |                                                          |                                                       |             1227 |           4483 |
 +----------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
 
 

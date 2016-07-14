@@ -26,8 +26,8 @@ architecture Behavioral of HoughColumn is
 signal CellTrackCand : std_logic_vector(cBins-1 downto 0) := (others => '0');
 signal CellStubCounter : t_StubCounter(cBins-1 downto 0) := (others => (others => '0'));
 signal CellOutputRegister : t_StubRegister(cBins-1 downto 0) := (others => (others => '0'));
-signal CellEnabler, CellReader, CellReady : std_logic_vector(cBins-1 downto 0) := (others => '0');
-
+signal CellEnabler, CellReady : std_logic_vector(cBins-1 downto 0) := (others => '0');
+signal CellReader : std_logic := '0';
 signal StubBuffer : t_stubBuffer(maxNumStubs-1 downto 0) := (others => (others => '0'));
 signal StubBufferForCells : t_stubBuffer(maxNumStubs-1 downto 0) := (others => (others => '0'));
 
@@ -38,19 +38,19 @@ signal stub, HTstub, CellStub : t_stub := nullStub;
 type t_ColumnState is (idle, processing, CheckBins, WaitForTracks, ReadOut);
 signal state : t_ColumnState := idle;
 signal stub_cbin : std_logic_vector(cBinWidth-1 downto 0) := (others => '0');
-attribute dont_touch : string;
+--attribute dont_touch : string;
 signal dsp_phi : std_logic_vector(phiWidth-1 downto 0) := (others => '0');
-attribute dont_touch of dsp_phi : signal is "true";
-signal dsp_rm : std_logic_vector(rWidth+mBinWidth downto 0) := (others => '0');
-signal dsp_rhalf: std_logic_vector(rWidth-1 downto 0) := (others => '0');
-signal dsp_cshift : std_logic_vector(rWidth-1 downto 0) := (others => '0');
-attribute dont_touch of dsp_rm : signal is "true";
-signal dsp_cbin, dsp_phirm : std_logic_vector(rWidth+mBinWidth downto 0) := (others => '0');
-attribute dont_touch of dsp_cbin : signal is "true";
+--attribute dont_touch of dsp_phi : signal is "true";
+signal dsp_rm : std_logic_vector(rWidth+mBinWidth-1 downto 0) := (others => '0');
+signal dsp_rhalf: std_logic_vector(rWidth-2 downto 0) := (others => '0');
+signal dsp_cshift : std_logic_vector(rWidth-2 downto 0) := (others => '0');
+--attribute dont_touch of dsp_rm : signal is "true";
+signal dsp_cbin, dsp_phirm : std_logic_vector(rWidth+mBinWidth-1 downto 0) := (others => '0');
+--attribute dont_touch of dsp_cbin : signal is "true";
 signal dspAddr0, dspAddr1, dspAddr2, dspAddr, stubAddr : std_logic_vector(maxNumStubsWidth-1 downto 0) := (others => '0');
 signal valid0, valid1, dspValid : std_logic := '0';
-attribute dont_touch of valid0 : signal is "true";
-attribute dont_touch of dspValid : signal is "true";
+--attribute dont_touch of valid0 : signal is "true";
+--attribute dont_touch of dspValid : signal is "true";
 
 
 signal CellAddr : std_logic_vector(cBinWidth-1 downto 0) := (others => '0');
@@ -69,7 +69,7 @@ rows: for k in cbins-1 downto 0 generate
 				clk => clk,
 				stub => CellStub,
 				writeEn => CellEnabler(k),
-				readEn => CellReader(k),
+				readEn => CellReader,
 				ready => CellReady(k),
 				trackCand => CellTrackCand(k),
 				stubCounter => CellStubCounter(k),
@@ -104,7 +104,7 @@ begin
 				CellEnabler <= (others => '0');
 				if readAddr = dspAddr and readAddr = writeAddr then
 					state <= WaitForTracks;
-					CellReader <= (others => '1');
+					CellReader <= '1';
 				end if;
 
 				if unsigned(readAddr) < unsigned(writeAddr) then
@@ -118,7 +118,7 @@ begin
 					end if;
 				end if;
 			when WaitForTracks =>
-				CellReader <= (others => '0');
+				CellReader <= '0';
 				state <= CheckBins;
 			when CheckBins =>
 				if CellReady = FullCBins then
@@ -153,8 +153,8 @@ begin
 
 		--DSP calculation (clock 0)
 		dsp_phi <= HTstub.phi;
-		dsp_rm <= std_logic_vector( to_signed(mbin*to_integer(unsigned(HTstub.r)), 14 ));
-		dsp_rhalf <= std_logic_vector(shift_right(unsigned(HTstub.r), 1));
+		dsp_rm <= std_logic_vector( to_signed(mbin*to_integer(unsigned(HTstub.r)), 13 ));
+		dsp_rhalf <= std_logic_vector(resize(shift_right(unsigned(HTstub.r), 1),rWidth-1));
 		valid0 <= HTstub.valid;
 		dspAddr0 <= readAddr;
 		-- clock 1

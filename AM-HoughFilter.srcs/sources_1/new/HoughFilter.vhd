@@ -53,7 +53,7 @@ begin
 	begin
 		Column : entity work.HoughColumn
 			generic map(
-				mbin => k-4
+				mbin => k- cBins/2
 			)
 		    port map (
 				clk => clk,

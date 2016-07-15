@@ -13,6 +13,10 @@ Compiling package ieee.numeric_std
 Compiling package ieee.math_real
 Compiling package xil_defaultlib.houghfilter_pkg
 Compiling architecture behavioral of entity xil_defaultlib.HoughCell [houghcell_default]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(7)\]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(6)\]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(5)\]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(4)\]
 Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(3)\]
 Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(2)\]
 Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(1)\]
@@ -21,6 +25,10 @@ Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughCo
 Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(-2)\]
 Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(-3)\]
 Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(-4)\]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(-5)\]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(-6)\]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(-7)\]
+Compiling architecture behavioral of entity xil_defaultlib.HoughColumn [\HoughColumn(-8)\]
 Compiling architecture behavioral of entity xil_defaultlib.HoughFilter [houghfilter_default]
 Compiling architecture behaviour of entity xil_defaultlib.filter_tb
 Built simulation snapshot Filter_TB_behav

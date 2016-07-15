@@ -11,13 +11,13 @@ constant phiWidth : integer := 13;
 constant zWidth : integer := 12;
 constant rWidth : integer := 10;
 constant layerIdWidth : integer := 3;
-constant mBins : integer := 8;
-constant cBins : integer := 8;
+constant mBins : integer := 16;
+constant cBins : integer := 16;
 constant FullCBins : std_logic_vector(cBins-1 downto 0) := (others => '1');
 constant FullMBins : std_logic_vector(mBins-1 downto 0) := (others => '1');
 
-constant mBinWidth : integer := 3;
-constant cBinWidth : integer := 3;
+constant mBinWidth : integer := 4;
+constant cBinWidth : integer := 4;
 constant stubWidth : integer := phiWidth + rWidth + layerIdWIdth + 2;
 constant FullCBinsAddr : std_logic_vector(cBinWidth-1 downto 0) := (others => '1');
 constant FullMBinsAddr : std_logic_vector(mBinWidth-1 downto 0) := (others => '1');

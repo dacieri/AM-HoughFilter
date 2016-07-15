@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Thu Jul 14 09:38:14 2016
-# Process ID: 28294
+# Start of session at: Fri Jul 15 09:54:50 2016
+# Process ID: 1120
 # Current directory: /net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.runs/impl_1
 # Command line: vivado -log HoughFilter.vdi -applog -messageDb vivado.pb -mode batch -source HoughFilter.tcl -notrace
 # Log file: /net/home/ppd/nlk16165/AM/AM-HoughFilter/AM-HoughFilter.runs/impl_1/HoughFilter.vdi

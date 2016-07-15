@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date             : Wed Jul 13 14:46:57 2016
+| Date             : Fri Jul 15 09:57:29 2016
 | Host             : heplnw236.pp.rl.ac.uk running 64-bit Scientific Linux release 6.7 (Carbon)
 | Command          : report_power -file HoughFilter_power_routed.rpt -pb HoughFilter_power_summary_routed.pb
 | Design           : HoughFilter
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.368 |
-| Dynamic (W)              | 0.148 |
-| Device Static (W)        | 0.220 |
+| Total On-Chip Power (W)  | 0.831 |
+| Dynamic (W)              | 0.607 |
+| Device Static (W)        | 0.224 |
 | Effective TJA (C/W)      | 1.8   |
-| Max Ambient (C)          | 84.4  |
-| Junction Temperature (C) | 25.6  |
+| Max Ambient (C)          | 83.5  |
+| Junction Temperature (C) | 26.5  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,19 +49,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.072 |        3 |       --- |             --- |
-| Slice Logic              |     0.036 |    15304 |       --- |             --- |
-|   LUT as Logic           |     0.031 |     5441 |    298600 |            1.82 |
-|   LUT as Distributed RAM |     0.002 |      244 |    108600 |            0.22 |
-|   Register               |     0.002 |     7772 |    597200 |            1.30 |
-|   CARRY4                 |     0.001 |      135 |     74650 |            0.18 |
-|   LUT as Shift Register  |    <0.001 |       37 |    108600 |            0.03 |
-|   F7/F8 Muxes            |    <0.001 |      315 |    298600 |            0.11 |
-|   Others                 |     0.000 |      146 |       --- |             --- |
-| Signals                  |     0.031 |    10036 |       --- |             --- |
-| I/O                      |     0.009 |       63 |       380 |           16.58 |
-| Static Power             |     0.220 |          |           |                 |
-| Total                    |     0.368 |          |           |                 |
+| Clocks                   |     0.244 |        3 |       --- |             --- |
+| Slice Logic              |     0.197 |    59553 |       --- |             --- |
+|   LUT as Logic           |     0.181 |    23065 |    298600 |            7.72 |
+|   Register               |     0.007 |    26783 |    597200 |            4.48 |
+|   LUT as Distributed RAM |     0.004 |      468 |    108600 |            0.43 |
+|   CARRY4                 |     0.004 |     1238 |     74650 |            1.66 |
+|   LUT as Shift Register  |    <0.001 |       80 |    108600 |            0.07 |
+|   F7/F8 Muxes            |    <0.001 |     1767 |    298600 |            0.59 |
+|   Others                 |     0.000 |      546 |       --- |             --- |
+| Signals                  |     0.146 |    35854 |       --- |             --- |
+| I/O                      |     0.020 |       65 |       380 |           17.11 |
+| Static Power             |     0.224 |          |           |                 |
+| Total                    |     0.831 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,11 +71,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.251 |       0.140 |      0.111 |
-| Vccaux    |       1.800 |     0.039 |       0.001 |      0.038 |
+| Vccint    |       1.000 |     0.702 |       0.587 |      0.115 |
+| Vccaux    |       1.800 |     0.040 |       0.002 |      0.038 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.005 |       0.004 |      0.001 |
+| Vcco18    |       1.800 |     0.010 |       0.009 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -141,8 +141,8 @@ Table of Contents
 +---------------------------------------+-----------+
 | Name                                  | Power (W) |
 +---------------------------------------+-----------+
-| HoughFilter                           |     0.148 |
-|   columns[0].Column                   |     0.017 |
+| HoughFilter                           |     0.607 |
+|   columns[0].Column                   |     0.036 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -151,14 +151,22 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
-|     rows[1].Cell                      |     0.001 |
-|     rows[2].Cell                      |     0.001 |
-|     rows[3].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.001 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.002 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.001 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.002 |
 |     rows[4].Cell                      |     0.001 |
-|     rows[5].Cell                      |     0.001 |
-|     rows[6].Cell                      |     0.001 |
-|     rows[7].Cell                      |     0.001 |
-|   columns[1].Column                   |     0.017 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.001 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[10].Column                  |     0.036 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -167,14 +175,22 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
-|     rows[1].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
 |     rows[2].Cell                      |     0.001 |
 |     rows[3].Cell                      |     0.001 |
-|     rows[4].Cell                      |     0.001 |
-|     rows[5].Cell                      |     0.001 |
-|     rows[6].Cell                      |     0.001 |
-|     rows[7].Cell                      |     0.001 |
-|   columns[2].Column                   |     0.017 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[11].Column                  |     0.036 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -183,14 +199,22 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.001 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.002 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
 |     rows[1].Cell                      |     0.001 |
 |     rows[2].Cell                      |     0.001 |
 |     rows[3].Cell                      |     0.001 |
-|     rows[4].Cell                      |     0.001 |
-|     rows[5].Cell                      |     0.001 |
-|     rows[6].Cell                      |     0.001 |
-|     rows[7].Cell                      |     0.001 |
-|   columns[3].Column                   |     0.017 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.001 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[12].Column                  |     0.036 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -199,14 +223,22 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
-|     rows[1].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.002 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
 |     rows[2].Cell                      |     0.001 |
-|     rows[3].Cell                      |     0.001 |
-|     rows[4].Cell                      |     0.001 |
-|     rows[5].Cell                      |     0.001 |
-|     rows[6].Cell                      |     0.001 |
-|     rows[7].Cell                      |     0.001 |
-|   columns[4].Column                   |     0.016 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.001 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[13].Column                  |     0.037 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -215,14 +247,22 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
 |     rows[1].Cell                      |     0.001 |
 |     rows[2].Cell                      |     0.001 |
-|     rows[3].Cell                      |     0.001 |
-|     rows[4].Cell                      |     0.001 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.002 |
 |     rows[5].Cell                      |     0.001 |
 |     rows[6].Cell                      |     0.001 |
-|     rows[7].Cell                      |     0.001 |
-|   columns[5].Column                   |     0.017 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[14].Column                  |     0.037 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -231,14 +271,22 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
-|     rows[1].Cell                      |     0.001 |
-|     rows[2].Cell                      |     0.001 |
-|     rows[3].Cell                      |     0.001 |
-|     rows[4].Cell                      |     0.001 |
-|     rows[5].Cell                      |     0.001 |
-|     rows[6].Cell                      |     0.001 |
-|     rows[7].Cell                      |     0.001 |
-|   columns[6].Column                   |     0.017 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.001 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.001 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[15].Column                  |     0.036 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -247,14 +295,22 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.001 |
+|     rows[11].Cell                     |     0.001 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.001 |
+|     rows[15].Cell                     |     0.001 |
 |     rows[1].Cell                      |     0.001 |
 |     rows[2].Cell                      |     0.001 |
-|     rows[3].Cell                      |     0.001 |
+|     rows[3].Cell                      |     0.002 |
 |     rows[4].Cell                      |     0.001 |
-|     rows[5].Cell                      |     0.001 |
+|     rows[5].Cell                      |     0.002 |
 |     rows[6].Cell                      |     0.001 |
 |     rows[7].Cell                      |     0.001 |
-|   columns[7].Column                   |     0.017 |
+|     rows[8].Cell                      |     0.001 |
+|     rows[9].Cell                      |     0.001 |
+|   columns[1].Column                   |     0.037 |
 |     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
 |     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
 |     StubBuffer_reg_0_31_0_5           |    <0.001 |
@@ -263,13 +319,213 @@ Table of Contents
 |     StubBuffer_reg_0_31_24_24         |    <0.001 |
 |     StubBuffer_reg_0_31_6_11          |    <0.001 |
 |     rows[0].Cell                      |     0.001 |
-|     rows[1].Cell                      |     0.001 |
-|     rows[2].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
 |     rows[3].Cell                      |     0.001 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.001 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[2].Column                   |     0.038 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.001 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.001 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.002 |
 |     rows[4].Cell                      |     0.001 |
+|     rows[5].Cell                      |     0.001 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[3].Column                   |     0.037 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.001 |
+|     rows[11].Cell                     |     0.001 |
+|     rows[12].Cell                     |     0.002 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.001 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.001 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.001 |
+|   columns[4].Column                   |     0.036 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.001 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.001 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.001 |
+|     rows[5].Cell                      |     0.001 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.001 |
+|     rows[9].Cell                      |     0.001 |
+|   columns[5].Column                   |     0.036 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.001 |
+|     rows[6].Cell                      |     0.001 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.001 |
+|   columns[6].Column                   |     0.035 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.001 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.002 |
 |     rows[5].Cell                      |     0.001 |
 |     rows[6].Cell                      |     0.001 |
 |     rows[7].Cell                      |     0.001 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.001 |
+|   columns[7].Column                   |     0.034 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.001 |
+|     rows[12].Cell                     |     0.002 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.001 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[8].Column                   |     0.034 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.002 |
+|     rows[13].Cell                     |     0.002 |
+|     rows[14].Cell                     |     0.002 |
+|     rows[15].Cell                     |     0.002 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.002 |
+|     rows[3].Cell                      |     0.002 |
+|     rows[4].Cell                      |     0.001 |
+|     rows[5].Cell                      |     0.002 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.002 |
+|   columns[9].Column                   |     0.034 |
+|     StubBufferForCells_reg_0_31_0_5   |    <0.001 |
+|     StubBufferForCells_reg_0_31_24_27 |    <0.001 |
+|     StubBuffer_reg_0_31_0_5           |    <0.001 |
+|     StubBuffer_reg_0_31_12_17         |    <0.001 |
+|     StubBuffer_reg_0_31_18_23         |    <0.001 |
+|     StubBuffer_reg_0_31_24_24         |    <0.001 |
+|     StubBuffer_reg_0_31_6_11          |    <0.001 |
+|     rows[0].Cell                      |     0.001 |
+|     rows[10].Cell                     |     0.002 |
+|     rows[11].Cell                     |     0.002 |
+|     rows[12].Cell                     |     0.001 |
+|     rows[13].Cell                     |     0.001 |
+|     rows[14].Cell                     |     0.001 |
+|     rows[15].Cell                     |     0.001 |
+|     rows[1].Cell                      |     0.002 |
+|     rows[2].Cell                      |     0.001 |
+|     rows[3].Cell                      |     0.001 |
+|     rows[4].Cell                      |     0.002 |
+|     rows[5].Cell                      |     0.001 |
+|     rows[6].Cell                      |     0.002 |
+|     rows[7].Cell                      |     0.002 |
+|     rows[8].Cell                      |     0.002 |
+|     rows[9].Cell                      |     0.001 |
 |   stubBuffer_reg_0_31_0_5             |    <0.001 |
 |   stubBuffer_reg_0_31_12_17           |    <0.001 |
 |   stubBuffer_reg_0_31_18_23           |    <0.001 |

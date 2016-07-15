@@ -34,7 +34,7 @@ begin
 			if inputStub.valid = '1' then
 				writeAddr <= std_logic_vector(unsigned(writeAddr) + 1);
 				ready <= '0';
-				if start = '1' then
+				if writeEn = '1' then
 					counter <= std_logic_vector(unsigned(counter) + 1);
 					reg(to_integer(unsigned(writeAddr))) <= '1';
 					layerReg(to_integer(unsigned(inputStub.layerId))) <= '1';

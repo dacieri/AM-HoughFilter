@@ -37,15 +37,15 @@ signal stub, HTstub, CellStub : t_stub := nullStub;
 
 type t_ColumnState is (idle, processing, CheckBins, WaitForTracks, ReadOut);
 signal state : t_ColumnState := idle;
-signal stub_cbin : std_logic_vector(cBinWidth-1 downto 0) := (others => '0');
+
 --attribute dont_touch : string;
-signal dsp_phi : std_logic_vector(phiWidth-1 downto 0) := (others => '0');
+signal dsp_phi : std_logic_vector(phiWidth downto 0) := (others => '0');
 --attribute dont_touch of dsp_phi : signal is "true";
-signal dsp_rm : std_logic_vector(rWidth+mBinWidth-1 downto 0) := (others => '0');
+signal dsp_rm0, dsp_rm1 : std_logic_vector(rWidth+mBinWidth-1 downto 0) := (others => '0');
 signal dsp_rhalf: std_logic_vector(rWidth-2 downto 0) := (others => '0');
 signal dsp_cshift : std_logic_vector(rWidth-2 downto 0) := (others => '0');
 --attribute dont_touch of dsp_rm : signal is "true";
-signal dsp_cbin, dsp_phirm : std_logic_vector(rWidth+mBinWidth-1 downto 0) := (others => '0');
+signal dsp_cbin0, dsp_cbin1, dsp_cmax, dsp_cmin, dsp_phirm : std_logic_vector(rWidth+mBinWidth-1 downto 0) := (others => '0');
 --attribute dont_touch of dsp_cbin : signal is "true";
 signal dspAddr0, dspAddr1, dspAddr2, dspAddr, stubAddr : std_logic_vector(maxNumStubsWidth-1 downto 0) := (others => '0');
 signal valid0, valid1, dspValid : std_logic := '0';
@@ -99,6 +99,8 @@ begin
 						state <= processing;
 						readAddr <= (others => '0');
 					end if;
+				else
+					ready <= '1';
 				end if ;			
 			when processing =>
 				CellEnabler <= (others => '0');
@@ -113,12 +115,16 @@ begin
 
 
 				if dspValid = '1' then
-					if to_integer(signed(dsp_cbin)) >= -4 and to_integer(signed(dsp_cbin)) < cBins/2 then
-						CellEnabler(to_integer(signed(dsp_cbin)) + 4) <= '1';		
-					end if;
+					EnablerLoop : for i in -cBins/2 to cBins/2 - 1 loop
+						if i >= to_integer(signed(dsp_cmin)) and i <= to_integer(signed(dsp_cmax)) then
+							CellEnabler(i + cBins/2 ) <= '1';
+						end if;
+					end loop ; 
+						--CellEnabler(to_integer(signed(dsp_cbin)) + 4) <= '1';		
 				end if;
 			when WaitForTracks =>
 				CellReader <= '0';
+				CellEnabler <= (others => '0');
 				state <= CheckBins;
 			when CheckBins =>
 				if CellReady = FullCBins then
@@ -152,22 +158,37 @@ begin
 		end case ;
 
 		--DSP calculation (clock 0)
-		dsp_phi <= HTstub.phi;
-		dsp_rm <= std_logic_vector( to_signed(mbin*to_integer(unsigned(HTstub.r)), 13 ));
-		dsp_rhalf <= std_logic_vector(resize(shift_right(unsigned(HTstub.r), 1),rWidth-1));
+		dsp_phi <= std_logic_vector(shift_left(resize(signed(HTstub.phi),phiWidth+1),1));
+		dsp_rm0 <= std_logic_vector( to_signed(mbin*to_integer(unsigned(HTstub.r)), rWidth + mBinWidth ));
+		dsp_rm1 <= std_logic_vector( to_signed( (mbin+1)*to_integer(unsigned(HTstub.r)), rWidth + mBinWidth ));
+		--dsp_rhalf <= std_logic_vector(resize(shift_right(unsigned(HTstub.r), 1),rWidth-1));
 		valid0 <= HTstub.valid;
 		dspAddr0 <= readAddr;
 		-- clock 1
-		dsp_phirm <= std_logic_vector(signed(dsp_phi)+signed(dsp_rm));
-		dsp_cshift <= dsp_rhalf;
+		dsp_cbin0 <= std_logic_vector(shift_right(signed(dsp_phi)+signed(dsp_rm0),7));
+		dsp_cbin1 <= std_logic_vector(shift_right(signed(dsp_phi)+signed(dsp_rm1),7));
+		--dsp_cshift <= dsp_rhalf;
 		valid1 <= valid0;
 		dspAddr1 <= dspAddr0;
 		-- clock 2
-		dsp_cbin <= std_logic_vector(shift_right(signed(dsp_phirm)+signed(dsp_cshift),7));
+		if signed(dsp_cbin0) > signed(dsp_cbin1) then
+			dsp_cmax <= dsp_cbin0;
+			dsp_cmin <= dsp_cbin1;
+		else 
+			dsp_cmax <= dsp_cbin1;
+			dsp_cmin <= dsp_cbin0;
+		end if;
+		dspAddr <= dspAddr1;
+		if dspAddr = writeAddr then
+
+		end if;
 		dspValid <= valid1;
-		dspAddr2 <= dspAddr1;
+
+		--dsp_cbin0 <= std_logic_vector(shift_right(signed(dsp_phirm)+signed(dsp_cshift),7));
+		--dsp_cbin1 <= 
+		--dspAddr2 <= dspAddr1;
 		-- Address
-		dspAddr <= dspAddr2;
+		--dspAddr <= dspAddr2;
 	end if ;
 end process ; -- ColumnProcess
 

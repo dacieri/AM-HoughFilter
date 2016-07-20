@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../AM-HoughFilter.srcs/sources_1/new/HoughFilter_pkg.vhd"
-vhdl xil_defaultlib  "../../../AM-HoughFilter.srcs/sources_1/new/HoughCell.vhd"
-vhdl xil_defaultlib  "../../../AM-HoughFilter.srcs/sources_1/new/HoughColumn.vhd"
-vhdl xil_defaultlib  "../../../AM-HoughFilter.srcs/sources_1/new/HoughFilter.vhd"
-vhdl xil_defaultlib  "../../../AM-HoughFilter.srcs/sim_1/new/HoughFilter_tb.vhd"
-
-# Do not sort compile order
-nosort

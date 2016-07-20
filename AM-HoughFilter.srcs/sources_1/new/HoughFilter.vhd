@@ -21,29 +21,34 @@ entity HoughFilter is
   	iStub : in t_stub;
   	mMin : in std_logic_vector(mBinWidth-1 downto 0);
   	mMax : in std_logic_vector(mBinWidth-1 downto 0);
-  	--phiRoad : in std_logic_vector(phiSWidth-1 downto 0);
   	oStub : out t_stub
   );
+  attribute ram_style :string ;
 end HoughFilter;
 
 architecture Behavioral of HoughFilter is
 
-	signal wAddr, rAddr : std_logic_vector(maxNumStubsWidth-1 downto 0) := (others => '0');
-	signal stubBuffer : t_stubBuffer(maxNumStubs-1 downto 0) := (others => (others => '0'));
-	signal ready : std_logic_vector(mbins-1 downto 0) := (others => '0');
-	signal trackCand : std_logic_vector(mbins-1 downto 0) := (others => '0');
-	signal stubCounter : t_StubCounter(mbins-1 downto 0) := (others => (others => '0'));
-	signal outputRegister : t_StubRegister(mbins-1 downto 0) := (others => (others => '0'));
-	signal stub : t_stub := nullStub;
+	-- Column signals
 	signal ColumnReset, ColumnReady : std_logic_vector(mbins-1 downto 0) := (others => '0');
 	signal ColumnCbin : t_CbinRegister(mbins-1 downto 0) := (others => (others => '0'));
 	signal ColumnAddr : std_logic_vector(mBinWidth-1 downto 0) := (others => '0');
+	signal trackCand : std_logic_vector(mbins-1 downto 0) := (others => '0');
+	signal stubCounter : t_StubCounter(mbins-1 downto 0) := (others => (others => '0'));
+	signal outputRegister : t_StubRegister(mbins-1 downto 0) := (others => (others => '0'));
 
+	-- Stub Buffer & addresses
+	signal wAddr, rAddr : std_logic_vector(maxNumStubsWidth-1 downto 0) := (others => '0');
+	signal stubBuffer : t_stubBuffer(maxNumStubs-1 downto 0) := (others => (others => '0'));
+	attribute ram_style of stubBuffer : signal is "block";
+	signal stub : t_stub := nullStub;
+	
+	-- Temporary signals to find column containing the max number of stubs
 	signal tempStubCounter : std_logic_vector(maxNumStubsWidth-1 downto 0) := (others => '0');
 	signal tempOutputRegister : std_logic_vector(maxNumStubs-1 downto 0) := (others => '0');
 	signal tempCbin : std_logic_vector(cBinWidth-1 downto 0) := (others => '0');
 	signal tempMbin : std_logic_vector(mBinWidth-1 downto 0) := (others => '0');
 
+	-- State Machine signals
 	type t_state is (idle, readColumn, readOut, waitForReset);
 	signal state : t_state := idle;
 
@@ -110,10 +115,7 @@ begin
 				when waitForReset =>
 					state <= idle;
 			end case ;
-
-
 		end if ;
-
 	end process ; -- HoughProcess
 
 end Behavioral;

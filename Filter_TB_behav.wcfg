@@ -12,29 +12,29 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="329994006fs"></ZoomEndTime>
-      <Cursor1Time time="122897000fs"></Cursor1Time>
+      <ZoomEndTime time="273048138fs"></ZoomEndTime>
+      <Cursor1Time time="173758000fs"></Cursor1Time>
    </zoom_setting>
    <WVObjectSize size="25" />
    <wave_markers>
       <marker label="" time="20835000" />
-      <marker label="" time="122897000" />
+      <marker label="" time="159156000" />
    </wave_markers>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/ColumnAddr">
-      <obj_property name="ElementShortName">ColumnAddr[2:0]</obj_property>
-      <obj_property name="ObjectShortName">ColumnAddr[2:0]</obj_property>
+      <obj_property name="ElementShortName">ColumnAddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ColumnAddr[3:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/ColumnCbin">
-      <obj_property name="ElementShortName">ColumnCbin[7:0][2:0]</obj_property>
-      <obj_property name="ObjectShortName">ColumnCbin[7:0][2:0]</obj_property>
+      <obj_property name="ElementShortName">ColumnCbin[15:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">ColumnCbin[15:0][3:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/ColumnReady">
-      <obj_property name="ElementShortName">ColumnReady[7:0]</obj_property>
-      <obj_property name="ObjectShortName">ColumnReady[7:0]</obj_property>
+      <obj_property name="ElementShortName">ColumnReady[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ColumnReady[15:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/ColumnReset">
-      <obj_property name="ElementShortName">ColumnReset[7:0]</obj_property>
-      <obj_property name="ObjectShortName">ColumnReset[7:0]</obj_property>
+      <obj_property name="ElementShortName">ColumnReset[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ColumnReset[15:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="logic" fp_name="/Filter_TB/uut/clk">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -45,20 +45,20 @@
       <obj_property name="ObjectShortName">iStub</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/mMax">
-      <obj_property name="ElementShortName">mMax[2:0]</obj_property>
-      <obj_property name="ObjectShortName">mMax[2:0]</obj_property>
+      <obj_property name="ElementShortName">mMax[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mMax[3:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/mMin">
-      <obj_property name="ElementShortName">mMin[2:0]</obj_property>
-      <obj_property name="ObjectShortName">mMin[2:0]</obj_property>
+      <obj_property name="ElementShortName">mMin[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mMin[3:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/oStub">
       <obj_property name="ElementShortName">oStub</obj_property>
       <obj_property name="ObjectShortName">oStub</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/outputRegister">
-      <obj_property name="ElementShortName">outputRegister[7:0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">outputRegister[7:0][31:0]</obj_property>
+      <obj_property name="ElementShortName">outputRegister[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputRegister[15:0][31:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/rAddr">
       <obj_property name="ElementShortName">rAddr[4:0]</obj_property>
@@ -66,8 +66,8 @@
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/ready">
-      <obj_property name="ElementShortName">ready[7:0]</obj_property>
-      <obj_property name="ObjectShortName">ready[7:0]</obj_property>
+      <obj_property name="ElementShortName">ready[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ready[15:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="other" fp_name="/Filter_TB/uut/state">
       <obj_property name="ElementShortName">state</obj_property>
@@ -82,16 +82,18 @@
       <obj_property name="ObjectShortName">stubBuffer[31:0][27:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/stubCounter">
-      <obj_property name="ElementShortName">stubCounter[7:0][4:0]</obj_property>
-      <obj_property name="ObjectShortName">stubCounter[7:0][4:0]</obj_property>
+      <obj_property name="ElementShortName">stubCounter[15:0][4:0]</obj_property>
+      <obj_property name="ObjectShortName">stubCounter[15:0][4:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/tempCbin">
-      <obj_property name="ElementShortName">tempCbin[2:0]</obj_property>
-      <obj_property name="ObjectShortName">tempCbin[2:0]</obj_property>
+      <obj_property name="ElementShortName">tempCbin[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tempCbin[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/tempMbin">
-      <obj_property name="ElementShortName">tempMbin[2:0]</obj_property>
-      <obj_property name="ObjectShortName">tempMbin[2:0]</obj_property>
+      <obj_property name="ElementShortName">tempMbin[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tempMbin[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/tempOutputRegister">
       <obj_property name="ElementShortName">tempOutputRegister[31:0]</obj_property>
@@ -102,8 +104,8 @@
       <obj_property name="ObjectShortName">tempStubCounter[4:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/trackCand">
-      <obj_property name="ElementShortName">trackCand[7:0]</obj_property>
-      <obj_property name="ObjectShortName">trackCand[7:0]</obj_property>
+      <obj_property name="ElementShortName">trackCand[15:0]</obj_property>
+      <obj_property name="ObjectShortName">trackCand[15:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/Filter_TB/uut/wAddr">
       <obj_property name="ElementShortName">wAddr[4:0]</obj_property>

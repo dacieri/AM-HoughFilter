@@ -37,7 +37,7 @@ begin
 
 	uut: HoughColumn
 		generic map(
-			mbin => 3
+			mbin => 2
 			)
 		port map(
 			clk => clk,

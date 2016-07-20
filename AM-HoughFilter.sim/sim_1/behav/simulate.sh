@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim Filter_TB_behav -key {Behavioral:sim_1:Functional:Filter_TB} -tclbatch Filter_TB.tcl -view /net/home/ppd/nlk16165/AM/AM-HoughFilter/Column_TB_behav.wcfg -view /net/home/ppd/nlk16165/AM/AM-HoughFilter/Cell_TB_behav.wcfg -view /net/home/ppd/nlk16165/AM/AM-HoughFilter/Filter_TB_behav.wcfg -log simulate.log
+ExecStep $xv_path/bin/xsim Column_TB_behav -key {Behavioral:sim_1:Functional:Column_TB} -tclbatch Column_TB.tcl -view /net/home/ppd/nlk16165/AM/AM-HoughFilter/Column_TB_behav.wcfg -view /net/home/ppd/nlk16165/AM/AM-HoughFilter/Cell_TB_behav.wcfg -view /net/home/ppd/nlk16165/AM/AM-HoughFilter/Filter_TB_behav.wcfg -log simulate.log

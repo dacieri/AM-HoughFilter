@@ -1,4 +1,0 @@
-Running: xsim.dir/Filter_TB_behav/xsimk -simmode gui -wdb Filter_TB_behav.wdb -simrunnum 0 -socket 34948
-Design successfully loaded
-Design Loading Memory Usage: 214060 KB (Peak: 214316 KB)
-Design Loading CPU Usage: 40 ms
